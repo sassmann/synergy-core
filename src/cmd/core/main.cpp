@@ -42,6 +42,11 @@ main(int argc, char** argv)
     Arch arch;
     arch.init();
 
+    while (true) {
+        std::cout << "HACK: sleep" << std::endl;
+        ARCH->sleep(1);
+    }
+
     Log log;
     EventQueue events;
 
